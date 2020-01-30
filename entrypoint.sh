@@ -64,6 +64,7 @@ if [ $EDIT_MODE = true ]; then
       -logfile /dev/stdout \
       -projectPath "$UNITY_PROJECT_PATH" \
       -runEditorTests \      
+      -force-free \
       -editorTestsResultFile "$FULL_ARTIFACTS_PATH/editmode-results.xml"
 
   # Catch exit code
