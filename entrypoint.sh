@@ -63,9 +63,8 @@ if [ $EDIT_MODE = true ]; then
       -batchmode \
       -logfile /dev/stdout \
       -projectPath "$UNITY_PROJECT_PATH" \
-      -runTests \
-      -testPlatform editmode \
-      -testResults "$FULL_ARTIFACTS_PATH/editmode-results.xml"
+      -runEditorTests \      
+      -editorTestsResultFile "$FULL_ARTIFACTS_PATH/editmode-results.xml"
 
   # Catch exit code
   EDIT_MODE_EXIT_CODE=$?
